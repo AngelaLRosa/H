@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8"/>
+<title>Fale conosco</title>
+<link rel="stylesheet" href="_css/Estilo.css"/> 
+
+</head>
+<script language="javascript" src="_javascript/funcoes.js">
+
+</script>
+<body>
+
+<div id="interface">
+<header id="cabecalho">
+   
+        <hgroup>
+        <h1>Recursos de Fale conosco no HTML 5</h1>
+        <h2>Testes de Fale conosco</h2>
+        </hgroup>
+
+    <img id="icone" src="_imagens/logo-html5.peq.png"/>
+   <nav id="menu">
+    <h1>MENU PRINCIPAL</h1>
+    <ul>
+         <li onmouseover="muda('imagens/home.png')"onmouseout="muda('_imagens/fale.png')"><a href="index.html">Home</a></li>
+         <li  onmouseover="muda('imagens/home-html5-peq.png')"onmouseout="muda('_imagens/fale.png')"><a href="index.html"></li><a href="html.html">TAGS HTML</a></li>
+         <li  onmouseover="muda('imagens/home-html5-peq.png')"onmouseout="muda('_imagens/fale.png')"><a href="index.html"><a href="exemplos.html">Exemplos(Fotos)</a></li>
+         <li  onmouseover="muda('imagens/home-html5-peq.png')"onmouseout="muda('_imagens/fale.png')"><a href="index.html"><a href="multimidia.html">Multimidia</a></li>
+         <li  onmouseover="muda('imagens/home-html5-peq.png')"onmouseout="muda('_imagens/fale.png')"><a href="index.html"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+ </nav>
+ 
+</header>
+<section>
+<article>
+<h3>Formulário</h3>
+<form method="post" id="contato" action="mailto:contato@contato.com.br">
+     <fieldset> 
+         <legend>Identificação do Usuário</legend>
+ 
+         <p>Nome:<input type="text" name="tNome" id="cNome" size="15" maxlength="15"  placeholder="Nome completo" /></p>
+         <p>Senha:<input type="password" name="tSenha" id="cSenha"/></p>
+         <p>E-mail:<input type="email" name="tMail" id="cMail" /></p>
+             <fieldset id="sexo"><legend>Sexo:</legend>
+                 <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">  Masculino</label>
+                  <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+	  </fieldset>
+    <p>Data de Nascimento:<input type="date" name="tData" id="cData"/></p>
+   </fieldset>
+   
+   <fieldset>
+   <legend>Mensagem do Usuário</legend>
+    Tipo de Mensagem:<input type="text" name="tTipomsg" id="cTipomsg" /><br/>
+    Mensagem:<textarea name="tMsg" id="cMsg" cols="30" rows="4"/></textarea>
+      </fieldset>
+    <input type="submit" value="Enviar"/> 
+</form>
+
+</article>
+</section>
+</body>
+</html>
